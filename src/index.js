@@ -1,8 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import Footer from "./Footer";
+import Header from "./Header";
+import Menu from "./Menu";
+
+import "./index.css";
 
 function App() {
-  return <h1>Hello world!</h1>;
+  return (
+    <div className="container">
+      <Header />
+      <Menu />
+      <Footer />
+    </div>
+  );
 }
 
 const rootElement = document.getElementById("root");
